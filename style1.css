@@ -1,0 +1,385 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #fff;
+
+}
+
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: #ee1c47;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #ee1c47;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 5% 10%;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+.center-text span{
+    color: #ee1c47;
+}
+.pro{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: #ee1c47;
+}
+.ratting i{
+    color: #ff8c00;
+    font-size: 18px;
+}
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  .tips-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 50px;
+  }
+  h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .sizechart-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  ul li span {
+    font-weight: bold;
+  }
+
+  .end-text{
+    background-color: #edfff1;
+    text-align: center;
+    padding: 50px;
+}
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+    .update-cart{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width:630px){
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-text p{
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-btn{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+    .sizechart p{
+        font-size: 18px;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }    
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+} 
+
+
+button {
+    display: grid;
+    margin: 5px auto;
+    padding: 3px 10px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    position: relative;
+  }
+  
+  .buy-now-button {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  .buy-now-button:hover {
+    background-color: #707070;
+  }
+  
+  .detail-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .detail-button:hover {
+    background-color: #0056b3;
+  }
+
+  .add-to-cart {
+    right: 0;
+    font-size: 20px;
+  }
+
+  .add-to-cart:hover {
+    color: #0056b3;
+  }
+  
+  .cart-link {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .cart-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .modal-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Responsif */
+  @media screen and (max-width: 768px) {
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .modal-content {
+      padding: 30px;
+    }
+  
+    .modal-images img {
+      width: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 890px) {
+    .products {
+      padding: 3px;
+    }
+  
+    .product-title {
+      font-size: 18px;
+    }
+  
+    .product-price {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .modal-images img {
+      width: 100px;
+    }
+  }

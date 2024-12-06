@@ -1,0 +1,224 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #fff;
+}
+
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #ee1c47;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 5% 10%;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.login{
+    width: 400px;
+}
+
+form{
+    width: 250px;
+    margin: 60px auto;
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+hr{
+    border-top: 2px solid #2c2c2c;
+}
+
+p{
+    text-align: center;
+    margin: 10px;
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Latar.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+form label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button{
+    border: none;
+    outline: none;
+    width: 252px;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #2c2c2c;
+}
+
+button:hover{
+    background-color: #ee1c47;
+}
+
+.end-text{
+    background-color: #edfff1;
+    text-align: center;
+    padding: 50px;
+}
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+    .contact{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+    .main-home{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }    
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+} 
+
+@media (max-width : 890px) {
+    .container{
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    form{
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .login{
+        width: 400px;
+        padding: 20px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .right img{
+        width: 100%;
+        height: 100%;
+    }
+}
