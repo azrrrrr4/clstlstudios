@@ -121,7 +121,7 @@ document.getElementById("checkout").addEventListener("click", () => {
       .join("\n") +
     `\n\nTotal: Rp ${total.toLocaleString("id-ID")}`;
 
-  const waURL = `https://wa.me/6287776174687?text=${encodeURIComponent(message)}`;
+  const waURL = `https://wa.me/6287776714687?text=${encodeURIComponent(message)}`;
   localStorage.removeItem("cart"); // Hapus keranjang setelah checkout
   window.location.href = waURL;
 });
