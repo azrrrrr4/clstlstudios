@@ -13,7 +13,7 @@ menu.onclick = () => {
 }
 
 // Nomor WhatsApp tujuan
-const whatsappNumber = "6287776174687"; // Ganti dengan nomor Anda
+const whatsappNumber = "6287776714687"; // Ganti dengan nomor Anda
 
 // Event listener untuk tombol "Beli Sekarang"
 document.querySelectorAll(".buy-now-button").forEach(button => {
